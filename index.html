@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./images/logo.svg" alt="Logo" class="header__logo" />
+      <nav class="nav">
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a href="#" class="nav__link" data-dropdown="true"
+              >Features<span
+                class="nav__link--dropdown nav__link--dropdown-down"
+                data-arrow="down"
+              ></span
+            ></a>
+            <ul class="nav__subitems nav__subitems--features">
+              <li class="nav__subitem">
+                <a href="#" class="nav__sublink">
+                  <span><img src="./images/icon-todo.svg" alt="" /></span> Todo
+                  List
+                </a>
+              </li>
+              <li class="nav__subitem">
+                <a href="#" class="nav__sublink">
+                  <span><img src="./images/icon-calendar.svg" alt="" /></span>
+                  Calender
+                </a>
+              </li>
+              <li class="nav__subitem">
+                <a href="#" class="nav__sublink">
+                  <span><img src="./images/icon-reminders.svg" alt="" /></span>
+                  Reminders
+                </a>
+              </li>
+              <li class="nav__subitem">
+                <a href="#" class="nav__sublink">
+                  <span><img src="./images/icon-planning.svg" alt="" /></span>
+                  Planning
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link" data-dropdown="true"
+              >Company
+              <span class="nav__link--dropdown nav__link--dropdown-down"></span
+            ></a>
+            <ul class="nav__subitems nav__subitems--company">
+              <li class="nav__subitem">
+                <a href="#" class="nav__sublink">History</a>
+              </li>
+              <li class="nav__subitem">
+                <a href="#" class="nav__sublink">Our Team</a>
+              </li>
+              <li class="nav__subitem">
+                <a href="#" class="nav__sublink">Blog</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Carriers</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">About</a>
+          </li>
+        </ul>
+        <ul class="nav__actions">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Login</a>
+          </li>
+          <li class="nav__item nav__cta">
+            <a href="#" class="nav__link nav__link--cta">Register</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn__navigation">
+        <img
+          src="./images/icon-menu.svg"
+          alt="Button Navigation"
+          class="btn__navigation--img"
+        />
+      </button>
+    </header>
+    <main>
+      <div class="section__hero">
+        <div class="hero__text-box">
+          <h1 class="hero__heading"><span>Make</span> remote work</h1>
+          <p class="hero__description">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <a href="#" class="btn btn__cta">Learn More</a>
+          <div class="clients">
+            <img
+              src="./images/client-databiz.svg"
+              alt="Logo Databiz"
+              class="databiz"
+            />
+            <img
+              src="./images/client-audiophile.svg"
+              alt="Logo Audiophile"
+              class="audiophile"
+            />
+            <img src="./images/client-meet.svg" alt="Logo Meet" class="meet" />
+            <img
+              src="./images/client-maker.svg"
+              alt="Logo Maker"
+              class="maker"
+            />
+          </div>
+        </div>
+        <img
+          src="./images/image-hero-desktop.png"
+          alt="Image Hero"
+          class="hero__img hero__img--desktop"
+        />
+        <img
+          src="./images/image-hero-mobile.png"
+          alt="Image Hero"
+          class="hero__img hero__img--mobile"
+        />
+      </div>
+    </main>
+    <div class="background__blur hidden"></div>
+  </body>
+</html>
